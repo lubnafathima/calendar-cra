@@ -1,5 +1,5 @@
 import React from "react";
-import { MONTHS, CURRENT_MONTH, CURRENT_YEAR} from "../utils/constants";
+import { MONTHS, CURRENT_MONTH, CURRENT_YEAR } from "../utils/constants";
 
 export default function Header({ month, year, setMonth, setYear }) {
   const handlePreviousMonth = () => {
@@ -23,7 +23,7 @@ export default function Header({ month, year, setMonth, setYear }) {
   const handleToday = () => {
     setMonth(CURRENT_MONTH);
     setYear(CURRENT_YEAR);
-  }
+  };
 
   return (
     <div className="header">

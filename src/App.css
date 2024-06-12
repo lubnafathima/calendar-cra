@@ -25,6 +25,9 @@
 .calendar {
   width: 100%;
   min-height: 93vh;
+  /*  */
+  display: flex;
+  flex-direction: column;
 }
 
 .button {

@@ -11,14 +11,14 @@ export default function Calendar({ month, year }) {
     return new Date(yearValue, monthValue + 1, 0).getDate();
   };
 
-  let firstDateOfAMonth = 1;
+  const firstDateOfAMonth = 1;
   const lastDateOfMonth = getLastDate(month, year);
   const firstDayOfAMonth = new Date(year, month, firstDateOfAMonth).getDay();
 
   const items = [];
 
   for (let i = 0; i < firstDayOfAMonth; i++) {
-    items.push(<div key={i} className="calendar_day empty"></div>);
+    items.push(<div key={`empty-${i}`} className="calendar_day empty"></div>);
   }
 
   for (let day = 1; day <= lastDateOfMonth; day++) {
@@ -40,7 +40,9 @@ export default function Calendar({ month, year }) {
           </p>
         ))}
       </div>
-      <div className="calendar_main">{items}</div>
+      <div className="calendar_main">
+        {items}
+      </div>
     </div>
   );
 }
