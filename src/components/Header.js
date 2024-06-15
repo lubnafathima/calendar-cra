@@ -27,7 +27,9 @@ export default function Header({ month, year, setMonth, setYear }) {
 
   return (
     <div className="header">
-      <button className="button" onClick={handleToday}>Today</button>
+      <button className="button" onClick={handleToday}>
+        Today
+      </button>
       <h2 className="header_date">
         {MONTHS[month]}, {year}
       </h2>

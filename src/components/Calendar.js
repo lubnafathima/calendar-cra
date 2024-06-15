@@ -7,9 +7,8 @@ import {
 } from "../utils/constants";
 
 export default function Calendar({ month, year }) {
-  const getLastDate = (monthValue, yearValue) => {
-    return new Date(yearValue, monthValue + 1, 0).getDate();
-  };
+  const getLastDate = (monthValue, yearValue) =>
+    new Date(yearValue, monthValue + 1, 0).getDate();
 
   const firstDateOfAMonth = 1;
   const lastDateOfMonth = getLastDate(month, year);
@@ -40,9 +39,7 @@ export default function Calendar({ month, year }) {
           </p>
         ))}
       </div>
-      <div className="calendar_main">
-        {items}
-      </div>
+      <div className="calendar_main">{items}</div>
     </div>
   );
 }
