@@ -1,3 +1,6 @@
+![calendar-cra](https://github.com/user-attachments/assets/32684b97-5379-492a-9077-5e11bc1bd3d2)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
